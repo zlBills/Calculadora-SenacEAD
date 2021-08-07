@@ -13,13 +13,13 @@ export default function App() {
     8,
     9,
     'x',
-    6,
-    5,
     4,
+    5,
+    6,
     '-',
-    3,
-    2,
     1,
+    2,
+    3,
     '+',
     0,
     '.',
@@ -66,7 +66,7 @@ export default function App() {
     }
     switch (buttonPressed) {
       case 'DEL':
-        setCurrentNumber(currentNumber.substring(0, currentNumber.length - 2));
+        setCurrentNumber(currentNumber.substring(0, currentNumber.length - 1));
         return;
       case 'LIMPAR': // Limpa todo o conteúdo
         setLastNumber('');
