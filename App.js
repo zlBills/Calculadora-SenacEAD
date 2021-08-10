@@ -50,6 +50,9 @@ export default function App() {
       case '/':
         setCurrentNumber((fistNumber / lastNumber).toString());
         return;
+      case '%':
+        setCurrentNumber(((fistNumber * lastNumber) / 100).toString());
+        return;
     }
   }
 
@@ -59,7 +62,8 @@ export default function App() {
       buttonPressed === '+' ||
       buttonPressed === '-' ||
       buttonPressed === 'x' ||
-      buttonPressed === '/'
+      buttonPressed === '/' ||
+      buttonPressed === '%'
     ) {
       setCurrentNumber(currentNumber + ' ' + buttonPressed + ' ');
       return;
