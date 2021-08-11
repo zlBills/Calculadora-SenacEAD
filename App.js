@@ -103,7 +103,7 @@ export default function App() {
             <TouchableOpacity
               onPress={() => handleInput(button)}
               key={button}
-              style={[styles.button]}>
+              style={[styles.button1]}>
               <Text style={[styles.textButton]}>{button}</Text>
             </TouchableOpacity>
           : // Mapeamento dos outros botões
@@ -112,7 +112,7 @@ export default function App() {
               key={button}
               style={styles.button}>
               <Text style={[styles.textButton]}>{button}</Text>
-          </TouchableOpacity>
+            </TouchableOpacity>
         )}
       </View>
     </View>
@@ -127,10 +127,10 @@ const styles = StyleSheet.create({
   results: {
     flex: 2,
     justifyContent: 'center',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#2e294f',
   },
   resultText: {
-    color: '#282F38',
+    color: 'white',
     fontSize: 32,
     fontWeight: 'bold',
     padding: 12,
@@ -147,7 +147,15 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: '#8408d1',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minWidth: 90,
+    minHeight: 90,
+    flex: 2,
+  },
+  button1: {
+    backgroundColor: '#2e294f',
     alignItems: 'center',
     justifyContent: 'center',
     minWidth: 90,
@@ -155,7 +163,7 @@ const styles = StyleSheet.create({
     flex: 2,
   },
   textButton: {
-    color: '#7c7c7c',
+    color: 'white',
     fontSize: 20,
   },
 });
